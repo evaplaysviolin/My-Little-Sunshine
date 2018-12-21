@@ -1,0 +1,54 @@
+.button {
+  height: 5.25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffdbb7;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+  .download {
+    background-color: #ffbca3;
+  }
+
+.center-content {
+  min-height: 66vh;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.left-content,
+.right-content {
+  min-height: 74vh;
+  width: 44%;
+  display: flex;
+  align-self: stretch;
+}
+.left-content {
+  padding: 2vh 1vw 2vh 2vw;
+}
+.right-content {
+  padding: 2vh 2vw 2vh 1vw;
+}
+
+.left-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.right-text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 6vh 3vw;
+}

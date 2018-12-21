@@ -1,0 +1,83 @@
+/* See borders while designing pages */
+/* * {
+  border: 1px dashed red;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Verdana, Microsoft Yahei, SimSun, STXihei, sans-serif;
+  font-size: 100%;
+  color: #0e468e;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/background.png");
+  background-size: 50%;
+}
+
+#header {
+  height: 15.5vh;
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+  cursor: pointer;
+}
+  #header-image {
+    padding-right: 1vw;
+  }
+    #logo {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  #header-text {
+    display: flex;
+    align-items: flex-end;
+    font-family: Love Ya Like A Sister;
+    font-size: 4.5rem;
+  }
+
+#navigation-bar {
+  height: 6.5vh;
+  background-color: #cbe2ef;
+}
+  #navigation-items {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+  }
+    .navigation-item {
+      height: 4.5vh;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Love Ya Like A Sister;
+      font-size: 1.75rem;
+      border-radius: 10px;
+      background-color: #fcf7c7;
+      cursor: pointer;
+      user-select: none;
+    }
+
+#inconstant-content {
+  min-height: 74vh;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#footer {
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1vh;
+}

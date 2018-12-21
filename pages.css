@@ -1,0 +1,265 @@
+/* .center-content CSS rules found in main-components.css */
+
+/* HOME & ABOUT */
+
+#home-container,
+#about-container {
+  min-height: 74vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  #home-text,
+  #about-text {
+    line-height: 1.3rem;
+  }
+
+
+/* INFORMATION & WAITLIST & ABOUT */
+
+#information-container,
+#waitlist-container,
+#contact-container {
+  min-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vh 0;
+}
+  #information-container a,
+  #waitlist-content a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+
+/* HOME */
+
+#home-text {
+  background-color: #cbe2ef;
+}
+
+
+/* PHOTOS */
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fade-out {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.4s;
+}
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 0.4s;
+}
+
+#photos-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#photos-container {
+  min-height: 74vh;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4vh;
+}
+
+.photo-thumbnail {
+  height: auto;
+  width: 92%;
+  border-radius: 10px;
+  margin: 1vh;
+  cursor: pointer;
+}
+  .photo-thumbnail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+#slideshow-container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #b1d3d1;
+  background-image: url("/images/background.png");
+  background-size: 50%;
+}
+
+#close-button {
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 5rem Love Ya Like A Sister;
+  position: absolute;
+  top: 1vh;
+  right: calc(10vw + 1vh);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.slideshow-action {
+  position: absolute;
+  height: 100vh;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 10rem Love Ya Like A Sister;
+  background-color: rgba(143, 178, 176, 0.3);
+  user-select: none;
+  cursor: pointer;
+  z-index: 15;
+}
+  #slideshow-left {
+    left: 0;
+  }
+  #slideshow-right {
+    right: 0;
+  }
+
+#slides-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh;
+  background-color: rgba(177, 211, 209, 0.5);
+}
+  .slide {
+    max-height: 600px;
+    max-width: 900px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .slide-description {
+    font-weight: 600;
+    margin-top: 2vh;
+  }
+
+
+/* INFORMATION */
+
+#information-container p {
+  margin-bottom: 2vh;
+}
+.information-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+  .information-button .button {
+    width: 38%;
+  }
+  .expand {
+    width: 38%;
+    padding: 2.5vh 2vw 4vh 3vw;
+    line-height: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    background-color: #ffeedd;
+    filter: drop-shadow(0 -8px #ffeedd);
+  }
+    .hidden {
+      display: none;
+    }
+    .expand span {
+      font-weight: 600;
+    }
+    #vacation-list {
+      font-size: 0.85rem;
+      padding-top: 1.5vh;
+      padding-bottom: 2.5vh;
+      padding-left: 18%;
+    }
+    #vacation-paragraph {
+      font-weight: 600;
+      padding-right: 1vw;
+    }
+
+
+/* WAITLIST */
+
+#waitlist-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe0e4;
+  padding: 4vh 4vw;
+}
+  #waitlist-content > * {
+    margin: 2vh 0;
+  }
+  #waitlist-content .button {
+    width: 85%;
+  }
+  #waitlist-thankyou {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  #waitlist-text {
+    line-height: 1.5rem;
+  }
+
+
+/* ABOUT */
+
+#about-text {
+  background-color: #eae0f1;
+}
+
+
+/* CONTACT */
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d8f3d4;
+  padding: 4vh;
+}
+  #contact-content > * {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 1vh 0;
+  }
+  #contact-content iframe {
+    height: 250px;
+    width: 400px;
+    padding-bottom: 3vh;
+  }

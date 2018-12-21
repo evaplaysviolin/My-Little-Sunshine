@@ -1,0 +1,797 @@
+/* Apply hover effects if mouse is available */
+/* Doesn't work in Firefox */
+@media only screen and (pointer: fine) {
+  .navigation-item:hover {
+    background-color: #fffcd6;
+  }
+  .navigation-item:hover,
+  #close-button:hover,
+  .slideshow-action:hover,
+  #information-container a:hover {
+    color: #1053a9;
+  }
+  #close-button:hover,
+  .slideshow-action:hover {
+    background-color: rgba(209, 232, 231, 0.3);
+  }
+  .button:hover {
+    background-color: #ffe3c9;
+  }
+  .download:hover {
+    background-color: #ffc7b2;
+  }
+}
+
+/* Column-style navigation menu */
+/* Column display for home and about pages */
+@media only screen 
+  and (min-height: 480px) 
+  and (min-width: 320px)
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  #header-text {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #navigation-items {
+    flex-direction: column;
+  }
+    .navigation-item {
+      width: 75%;
+    }
+  #footer {
+    height: 6vh;
+  }
+  #home-container,
+  #about-container {
+    flex-direction: column;
+  }
+    #home-text,
+    #about-text {
+      line-height: 1.25rem;
+    }
+  /* Left = above, right = below */
+  .left-content,
+  .right-content {
+    min-height: 25vh;
+    width: 100%;
+    padding: 2vh 2vw;
+  }
+    .left-content,
+    .right-content {
+      padding-top: 2.5vh;
+    }
+    .right-content,
+    .right-text {
+      height: auto;
+    }
+      .right-text {
+        padding: 4vh 4vw;
+      }
+  #information-container,
+  #waitlist-container,
+  #contact-container {
+    padding: 2vh 0;
+  }
+}
+
+@media only screen 
+  and (min-height: 480px) 
+  and (min-width: 320px) 
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  * {
+    font-size: 96%;
+  }
+  body {
+    background-size: 100%;
+  }
+  #header-text {
+    font-size: 1.6rem;
+  }
+  #navigation-bar {
+    height: 28vh;
+  }
+    .navigation-item {
+      height: 4vh;
+      font-size: 0.98rem;
+    }
+  /* 15.5 (header) + 28 (bar) + 6 (footer) = 49.5 */
+  /* 100 - 49.5 = 50.5 */
+  #inconstant-content,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #contact-container,
+  .center-content {
+    min-height: 50.5vh;
+  }
+  /* Two-column gallery */
+  #photos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    #close-button {
+      height: 8vh;
+      width: 8vh;
+      font-size: 2.5rem;
+      right: calc(15vw + 1vh);
+    }
+    .slideshow-action {
+      width: 15vw;
+      font-size: 5rem;
+      color: white;
+    }
+  .button {
+    height: 6vh;
+    font-size: 0.9rem;
+  }
+  .information-button .button,
+  .center-content,
+  .expand {
+    width: 95%;
+  }
+    .expand {
+      padding: 3vh 3vw 5vh 6.5vw;
+      line-height: 1.25rem;
+    }
+      .expand span,
+      #vacation-list {
+        font-size: 104%;
+      }
+      #vacation-list {
+        padding-left: 5%;
+      }
+  #waitlist-thankyou {
+    font-size: 1rem;
+  }
+  #waitlist-text {
+    line-height: 1.25rem;
+  }
+  #contact-content > * {
+    font-size: 1rem;
+  }
+  #contact-content iframe {
+    height: 175px;
+    width: 250px;
+    padding-bottom: 2vh;
+  }
+  .navigation-item,
+  .left-image,
+  .right-text,
+  .photo-thumbnail,
+  #close-button,
+  .slide img,
+  .button, 
+  .center-content {
+    border-radius: 5px;
+  }
+  .expand {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media only screen 
+  and (min-height: 620px) 
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  body {
+    background-size: 90%;
+  }
+  #header-text {
+    font-size: 1.8rem;
+  }
+  #navigation-bar {
+    height: 24vh;
+  }
+    .navigation-item {
+      height: 3.75vh;
+      font-size: 1rem;
+    }
+  /* 15.5 (header) + 24 (bar) + 4 (footer) = 43.5 */
+  /* 100 - 43.5 = 56.5 */
+  #inconstant-content,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #contact-container,
+  .center-content {
+    min-height: 56.5vh;
+  }
+  #footer {
+    height: 4vh;
+  }
+}
+
+@media only screen 
+  and (min-height: 800px) 
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  * {
+    font-size: 98%;
+  }
+  body {
+    background-size: 80%;
+  }
+  #header-text {
+    font-size: 2.2rem;
+  }
+  #navigation-bar {
+    height: 22vh;
+  }
+    .navigation-item {
+      height: 3.5vh;
+      font-size: 1.2rem;
+    }
+  /* 15.5 (header) + 22 (bar) + 4 (footer) = 41.5 */
+  /* 100 - 41.5 = 58.5 */
+  #inconstant-content,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #contact-container,
+  .center-content {
+    min-height: 58.5vh;
+  }
+  #close-button {
+    height: 7vh;
+    width: 7vh;
+  }
+  .button {
+    height: 5.25vh;
+    font-size: 1rem;
+  }
+    .expand span,
+    #vacation-list {
+      font-size: 102%;
+    }
+  #contact-content iframe {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media only screen 
+  and (min-height: 950px)
+  and (min-width: 600px) 
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  body {
+    background-size: 70%;
+  }
+  #header-text {
+    font-size: 3rem;
+  }
+    .navigation-item {
+      width: 62%;
+      font-size: 1.2rem;
+    }
+  /* Three-column gallery */
+  #photos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Center last item (# of images not divisible by 3) */
+    #photos-container img:last-child {
+      grid-column: 2 / 3;
+    }
+  #close-button {
+    height: 6vh;
+    width: 6vh;
+    right: calc(12vw + 1vh);
+    font-size: 3rem; 
+  }
+  .slideshow-action {
+    width: 12vw;
+    font-size: 6rem;
+  }
+  .button {
+    height: 4.5vh;
+    font-size: 1.1rem;
+  }
+    #vacation-list {
+      padding-left: 10%;
+    }
+  #waitlist-thankyou,
+  #contact-content > * {
+    font-size: 1.1rem;
+  }
+  #contact-content iframe {
+    height: 225px;
+    width: 350px;
+  }
+}
+
+@media only screen 
+  and (min-height: 1100px) 
+  and (max-width: 1499px) 
+  and (orientation: portrait)
+{
+  * {
+    font-size: 100%;
+  }
+  body {
+    background-size: 60%;
+  }
+  #header-text {
+    font-size: 4rem;
+  }
+  #navigation-bar {
+    height: 18vh;
+  }
+    .navigation-item {
+      height: 2.75vh;
+      width: 56%;
+      font-size: 1.4rem;
+    }
+  /* 15.5 (header) + 18 (bar) + 4 (footer) = 37.5 */
+  /* 100 - 37.5 = 62.5 */
+  #inconstant-content,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #contact-container,
+  .center-content {
+    min-height: 62.5vh;
+  }
+  /* Reset grid to four-column */
+  #photos-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Reset placement of last image */
+    #photos-container img:last-child {
+      grid-column: auto;
+    }
+  #close-button {
+    font-size: 4rem; 
+  }
+  .slideshow-action {
+    font-size: 7rem;
+  }
+  .button {
+    height: 4vh;
+  }
+    .information-button .button {
+      width: 82%;
+    }
+      .expand span,
+      #vacation-list {
+        font-size: 100%;
+      }
+      .expand {
+        width: 82%;
+      }
+      #vacation-list {
+        padding-left: 14%;
+      }
+  .center-content {
+    width: 82%;
+  }
+  #contact-content iframe {
+    height: 250px;
+    width: 400px;
+  }
+  .navigation-item,
+  .left-image,
+  .right-text,
+  .photo-thumbnail,
+  #close-button,
+  .slide img,
+  .button,
+  .center-content {
+    border-radius: 7px;
+  }
+  .expand {
+    border-radius: 0 0 7px 7px;
+  }
+}
+
+/* Column-style navigation menu */
+/* Column display for home and about pages */
+@media only screen 
+  and (min-height: 320px) 
+  and (min-width: 480px) 
+  and (max-width: 949px) 
+  and (orientation: landscape) 
+{
+  #navigation-bar {
+    height: 38vh;
+  }
+    #navigation-items {
+      flex-direction: column;
+    }
+      .navigation-item {
+        height: 6vh;
+        width: 50%;
+      }
+  /* 15.5 (header) + 38 (bar) + 6 (footer) = 59.5 */
+  /* 100 - 59.5 = 40.5 */
+  #inconstant-content,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #contact-container,
+  .center-content {
+    min-height: 40.5vh;
+  }
+  #footer {
+    height: 6vh;
+  }
+
+  #home-container,
+  #about-container {
+    flex-direction: column;
+  }
+    #home-text,
+    #about-text {
+      line-height: 1.25rem;
+    }
+  /* Left = above, right = below */
+  .left-content,
+  .right-content {
+    width: 100%;
+    padding: 2vh 2vw;
+  }
+    .left-content {
+      padding-top: 3vh;
+    }
+    .right-content {
+      height: auto;
+      padding-bottom: 3vh;
+    }
+      .right-text {
+        height: auto;
+        padding: 4vh 4vw;
+      }
+}
+
+@media only screen 
+  and (min-height: 320px) 
+  and (min-width: 480px) 
+  and (max-width: 1499px)
+  and (orientation: landscape) 
+{
+  * {
+    font-size: 96%;
+  }
+  body {
+    background-size: 75%;
+  }
+  #header-text {
+    font-size: 2rem;
+  }
+    .navigation-item {
+      font-size: 0.98rem;
+      border-radius: 5px;
+    }
+  
+  .left-image,
+  .right-text {
+    border-radius: 5px;
+  }
+
+    .photo-thumbnail {
+      border-radius: 5px;
+    }
+      #close-button,
+      .slideshow-action {
+        color: white;
+      }
+      #close-button {
+        height: 12vh;
+        width: 12vh;
+        font: 2.5rem Love Ya Like A Sister;
+        border-radius: 5px;
+      }
+      .slideshow-action {
+        font: 5rem Love Ya Like A Sister;
+      }
+        .slide img {
+          border-radius: 5px;
+        }
+
+  .button {
+    height: 8vh;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  .information-button .button {
+    width: 75%;
+  }
+    .expand {
+      width: 75%;
+      padding: 4vh 4vw 6vh 6vw;
+      line-height: 1.25rem;
+      border-radius: 0 0 5px 5px;
+    }
+      .expand span {
+        font-size: 104%;
+      }
+      #vacation-list {
+        font-size: 104%;
+        padding-left: 12%;
+      }
+
+  .center-content {
+    width: 75%;
+    border-radius: 5px;
+  }
+    #waitlist-thankyou {
+      font-size: 1rem;
+    }
+    #waitlist-text {
+      line-height: 1.25rem;
+    }
+
+  #contact-content > * {
+    font-size: 1rem;
+  }
+  #contact-content iframe {
+    height: 175px;
+    width: 275px;
+    padding-bottom: 3vh;
+  }
+}
+
+@media only screen 
+  and (min-width: 650px) 
+  and (max-width: 1499px)
+  and (orientation: landscape) 
+{
+  * {
+    font-size: 98%;
+  }
+  body {
+    background-size: 70%;
+  }
+  #header-text {
+    font-size: 2.25rem;
+  }
+    .navigation-item {
+      font-size: 0.99rem;
+      border-radius: 6px;
+    }
+
+  .left-image,
+  .right-text {
+    border-radius: 6px;
+  }
+
+  .photo-thumbnail {
+    border-radius: 6px;
+  }
+    #close-button {
+      font: 3rem Love Ya Like A Sister;
+      border-radius: 6px;
+    }
+    .slideshow-action {
+      font: 6rem Love Ya Like A Sister;
+      color: #0e468e;
+    }
+      .slide img {
+        border-radius: 6px;
+      }
+
+  .button {
+    height: 9vh;
+    font-size: 0.95rem;
+    border-radius: 6px;
+  }
+  .information-button .button {
+    width: 68%;
+  }
+    .expand {
+      width: 68%;
+    }
+      .expand span {
+        font-size: 102%;
+      }
+      #vacation-list {
+        font-size: 102%;
+        padding-left: 10%;
+      }
+
+  .center-content {
+    width: 68%;
+    border-radius: 6px;
+  }
+
+  #contact-content iframe {
+    height: 200px;
+    width: 325px;
+  }
+}
+
+@media only screen 
+  and (min-width: 950px) 
+  and (max-width: 1499px) 
+  and (orientation: landscape) 
+{
+  body {
+    background-size: 65%;
+  }
+  #header-text {
+    font-size: 3rem;
+  }
+  #navigation-bar {
+    height: 8vh;
+  }
+    .navigation-item {
+      height: 5.5vh;
+      width: 18.5%;
+      font-size: 1.2rem;
+    }
+  
+  .left-content,
+  .right-content {
+    width: 48%;
+  }
+
+  #close-button {
+    font: 3.5rem Love Ya Like A Sister;
+  }
+  .slideshow-action {
+    font: 7rem Love Ya Like A Sister;
+  }
+
+  .button {
+    height: 8vh;
+  }
+  .information-button .button {
+    width: 56%;
+  }
+    .expand {
+      width: 56%;
+      padding: 3vh 3vw 5vh 4.5vw;
+    }
+      #vacation-list {
+        padding-left: 12%;
+      }
+
+  .center-content {
+    width: 56%;
+  }
+
+  #contact-content iframe {
+    height: 200px;
+    width: 325px;
+  }
+}
+
+@media only screen 
+  and (min-width: 1100px) 
+  and (max-width: 1499px) 
+  and (orientation: landscape) 
+{
+  * {
+    font-size: 99%;
+  }
+  body {
+    background-size: 60%;
+  }
+  #header-text {
+    font-size: 3.5rem;
+  }
+  #navigation-bar {
+    height: 7.5vh;
+  }
+    .navigation-item {
+      height: 5.5vh;
+      width: 18%;
+      font-size: 1.4rem;
+    }
+
+  #close-button {
+    height: 11vh;
+    width: 11vh;
+    font: 4rem Love Ya Like A Sister;
+  }
+  .slideshow-action {
+    font: 8rem Love Ya Like A Sister;
+  }
+
+  .button {
+    height: 7vh;
+    font-size: 1.1rem;
+  }
+  .information-button .button {
+    width: 54%;
+  }
+    .expand {
+      width: 54%;
+      padding: 3vh 3vw 5vh 4vw;
+    }
+      .expand span {
+        font-size: 101%;
+      }
+      #vacation-list {
+        font-size: 101%;
+        padding-left: 15%;
+      }
+
+  .center-content {
+    width: 54%;
+  }
+  #waitlist-thankyou,
+  #contact-content > * {
+    font-size: 1.1rem;
+  }
+
+  #contact-content iframe {
+    height: 225px;
+    width: 350px;
+  }
+}
+
+@media only screen 
+  and (min-width: 1300px) 
+  and (max-width: 1499px) 
+  and (orientation: landscape) 
+{
+  body {
+    background-size: 55%;
+  }
+  #header-text {
+    font-size: 4rem;
+  }
+  #navigation-bar {
+    height: 7vh;
+  }
+    .navigation-item {
+      height: 5vh;
+      width: 16.5%;
+      font-size: 1.5rem;
+    }
+
+  #close-button {
+    height: 10.5vh;
+    width: 10.5vh;
+    font: 4.5rem Love Ya Like A Sister;
+  }
+  .slideshow-action {
+    font: 9rem Love Ya Like A Sister;
+  }
+
+  .button {
+    height: 6vh;
+    font-size: 1.1rem;
+  }
+  .information-button .button {
+    width: 42%;
+  }
+    .expand {
+      width: 42%;
+      padding: 2.5vh 3vw 5vh 4vw;
+    }
+    #vacation-list {
+      font-size: 94%;
+    }
+
+  .center-content {
+    width: 42%;
+  }
+
+  #contact-content iframe {
+    height: 225px;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1850px) {
+  body {
+    background-size: 35%;
+  }
+  #navigation-items,
+  #home-container,
+  #photos-container,
+  #information-container,
+  #waitlist-container,
+  #about-container,
+  #contact-container {
+    max-width: 1850px;
+    margin: 0 auto;
+  }
+}
