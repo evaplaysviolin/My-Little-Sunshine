@@ -1,21 +1,21 @@
 // Image URLs stored here
 const imagesBase = [
-  "/images/photo-gallery/MLS5",
-  "/images/photo-gallery/MLS10",
-  "/images/photo-gallery/MLS15",
-  "/images/photo-gallery/MLS20",
-  "/images/photo-gallery/MLS25",
-  "/images/photo-gallery/MLS30",
-  "/images/photo-gallery/MLS35",
-  "/images/photo-gallery/MLS40",
-  "/images/photo-gallery/MLS45",
-  "/images/photo-gallery/MLS50",
-  "/images/photo-gallery/MLS55",
-  "/images/photo-gallery/MLS60",
-  "/images/photo-gallery/MLS65",
-  "/images/photo-gallery/MLS70",
-  "/images/photo-gallery/MLS75",
-  "/images/photo-gallery/MLS80"
+  "images/photo-gallery/MLS5",
+  "images/photo-gallery/MLS10",
+  "images/photo-gallery/MLS15",
+  "images/photo-gallery/MLS20",
+  "images/photo-gallery/MLS25",
+  "images/photo-gallery/MLS30",
+  "images/photo-gallery/MLS35",
+  "images/photo-gallery/MLS40",
+  "images/photo-gallery/MLS45",
+  "images/photo-gallery/MLS50",
+  "images/photo-gallery/MLS55",
+  "images/photo-gallery/MLS60",
+  "images/photo-gallery/MLS65",
+  "images/photo-gallery/MLS70",
+  "images/photo-gallery/MLS75",
+  "images/photo-gallery/MLS80"
 ];
 
 // Matching descriptions for each photo

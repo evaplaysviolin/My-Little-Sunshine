@@ -119,7 +119,7 @@ class Root extends React.Component {
             // Pass information for page to render through Animation for Root to render
             onClick={()=>this.handleNavigationClick("home")}>
             <div id="header-image">
-              <img id="logo" src="/images/logo.png" />
+              <img id="logo" src="images/logo.png" />
             </div>
             <div id="header-text">My Little Sunshine</div>
           </div>
@@ -294,7 +294,7 @@ class Home extends React.Component {
           <Image
             id="home-image"
             className="left-image"
-            src="/images/main-image.jpg" 
+            src="images/main-image.jpg" 
             alt="ASDF"
           />
         </div>

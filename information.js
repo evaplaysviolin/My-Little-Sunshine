@@ -62,17 +62,17 @@ class Information extends React.Component {
         {this.renderButton(
           "download-day",
           "download",
-          "/downloadables/daily-schedule.doc",
+          "downloadables/daily-schedule.doc",
           "Download Daily/Weekly Schedules")}
         {this.renderButton(
           "download-year",
           "download",
-          "/downloadables/holiday-schedule.doc",
+          "downloadables/holiday-schedule.doc",
           "Download 2018 Holiday & Vacation Schedules")}
         {this.renderButton(
           "download-full",
           "download",
-          "/downloadables/full-handout.doc",
+          "downloadables/full-handout.doc",
           "Download Full Handout (All Information Above)")}
       </div>
     );

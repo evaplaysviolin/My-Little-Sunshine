@@ -25,7 +25,7 @@ class Waitlist extends React.Component {
             <Button 
               className="waitlist download"
               buttonText="Download the form"
-              link="/downloadables/form.doc"
+              link="downloadables/form.doc"
             />
         </div>
       </div>
@@ -62,7 +62,7 @@ class About extends React.Component {
           <Image
             id="about-image"
             className="left-image"
-            src="/images/about-image.jpg" 
+            src="images/about-image.jpg" 
             alt="ASDF"
           />
         </div>
