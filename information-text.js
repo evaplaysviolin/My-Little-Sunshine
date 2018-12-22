@@ -77,7 +77,7 @@ const paymentText = <ul>
     privileges is at the discretion of the day care.</li>
   <li>At least a month deposit is required to HOLD a slot 
     for your child within 2 months before using child care. 
-    <span><em> Please also include Registration Fee of $100.00 with the deposit. </em></span>
+    <span><em> Please also include registration fee with the deposit. </em></span>
     Deposit will go toward the first month of day care fee. 
     If you decide NOT to attend the day care, 
     10% of deposit will be forfeited. We will refund your deposit 
