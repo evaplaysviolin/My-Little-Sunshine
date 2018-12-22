@@ -68,7 +68,7 @@ class Information extends React.Component {
           "download-year",
           "download",
           "downloadables/holiday-schedule.doc",
-          "Download 2018 Holiday & Vacation Schedules")}
+          "Download 2019 Holiday & Vacation Schedules")}
         {this.renderButton(
           "download-full",
           "download",
