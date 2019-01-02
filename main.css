@@ -79,5 +79,5 @@ body {
   align-items: flex-end;
   text-align: center;
   font-weight: 600;
-  padding-bottom: 1vh;
+  padding: 1vh 0;
 }
