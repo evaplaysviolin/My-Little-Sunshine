@@ -49,7 +49,7 @@
 
 const imagesBase = [];
 const imagesDescription = [];
-for (let i = 0; i < 128; i++) {
+for (let i = 1; i < 128; i++) {
   imagesBase.push(`images/photo-gallery/MLS${i}`);
   imagesDescription.push(`${i}`);
 }
@@ -124,14 +124,14 @@ class Photos extends React.Component {
     for (let i = 0; i < imagesBase.length; i++) {
       this.imagesThumb.push(
         <Image 
-          src={imagesBase[i] + "-300x200.png"} 
+          src={imagesBase[i] + "-300x200.jpg"} 
           className="photo-thumbnail"
           onClick={this.handleImageClick}
         />
       );
       this.imagesFull.push(
         <Image
-          src={imagesBase[i] + "-900x600.png"}
+          src={imagesBase[i] + "-900x600.jpg"}
           className="photo-full"
         />
       );
